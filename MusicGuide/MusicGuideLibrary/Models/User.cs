@@ -7,9 +7,14 @@ using System.Threading.Tasks;
 namespace MusicGuide.MusicGuideLibrary.Models
 {
     [Serializable]
-    public abstract class User
+    public class User
     {
         public string Login { set; get; }
         public string Password { set; get; }
+        public User(string login, string password)
+        {
+            Login = login;
+            Password = password;
+        }
     }
 }

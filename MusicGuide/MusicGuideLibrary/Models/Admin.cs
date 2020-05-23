@@ -9,5 +9,6 @@ namespace MusicGuide.MusicGuideLibrary.Models
     [Serializable]
     class Admin : User
     {
+        public Admin(string login, string password) : base(login, password){ }
     }
 }
