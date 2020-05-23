@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 namespace MusicGuide.Models
 {
     //class for albums
-    class Album : Info
+    [Serializable]
+    public class Album : Info
     {
         public List<Song> songs = new List<Song>();
         public Album(string name = "", int year = 0, string genre = "", string link = "") : base(name, year, genre, link) {}

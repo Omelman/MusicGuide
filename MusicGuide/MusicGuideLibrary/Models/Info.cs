@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 namespace MusicGuide.Models
 {
     //basic info class
-    abstract class Info
+    [Serializable]
+    public abstract class Info
     {
         public string Name { private set; get; }
         //

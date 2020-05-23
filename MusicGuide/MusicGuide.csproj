@@ -46,19 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LoginForm.cs">
+    <Compile Include="MusicGuideLibrary\Models\Admin.cs" />
+    <Compile Include="MusicGuideLibrary\Models\Storage.cs" />
+    <Compile Include="MusicGuideLibrary\Models\User.cs" />
+    <Compile Include="UserApp\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginForm.Designer.cs">
+    <Compile Include="UserApp\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\Album.cs" />
-    <Compile Include="Models\Artist.cs" />
-    <Compile Include="Models\Info.cs" />
-    <Compile Include="Models\Song.cs" />
+    <Compile Include="MusicGuideLibrary\DAL\Dao.cs" />
+    <Compile Include="MusicGuideLibrary\Models\Album.cs" />
+    <Compile Include="MusicGuideLibrary\Models\Artist.cs" />
+    <Compile Include="MusicGuideLibrary\Models\Info.cs" />
+    <Compile Include="MusicGuideLibrary\Models\Song.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="LoginForm.resx">
+    <EmbeddedResource Include="UserApp\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -90,6 +94,8 @@
   <ItemGroup>
     <None Include="images\user.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="AdminApp\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
