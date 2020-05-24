@@ -46,11 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdminApp\AddInfo.cs">
+    <Compile Include="AdminApp\AddInfoAlbum.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdminApp\AddInfo.Designer.cs">
-      <DependentUpon>AddInfo.cs</DependentUpon>
+    <Compile Include="AdminApp\AddInfoAlbum.Designer.cs">
+      <DependentUpon>AddInfoAlbum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminApp\AddInfoArtist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminApp\AddInfoArtist.Designer.cs">
+      <DependentUpon>AddInfoArtist.cs</DependentUpon>
     </Compile>
     <Compile Include="AdminApp\LoginFormAdmin.cs">
       <SubType>Form</SubType>
@@ -91,8 +97,11 @@
     <Compile Include="UserApp\SingUp.Designer.cs">
       <DependentUpon>SingUp.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AdminApp\AddInfo.resx">
-      <DependentUpon>AddInfo.cs</DependentUpon>
+    <EmbeddedResource Include="AdminApp\AddInfoAlbum.resx">
+      <DependentUpon>AddInfoAlbum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminApp\AddInfoArtist.resx">
+      <DependentUpon>AddInfoArtist.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdminApp\LoginFormAdmin.resx">
       <DependentUpon>LoginFormAdmin.cs</DependentUpon>

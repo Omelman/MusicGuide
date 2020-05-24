@@ -104,6 +104,10 @@ namespace MusicGuide
                     if (store.users.FirstOrDefault(u => u.Login == name && u.Password == password) != null)
                     {
                         MessageBox.Show($"Hello, Dear {name}! We wish you to have a nice day)");
+                        Form Menu = new MenuUser(ref store);
+                        Menu.Left = this.Left;
+                        Menu.Top = this.Top;
+                        Menu.Show();
                         this.Hide();
                     }
                     else

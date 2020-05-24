@@ -9,7 +9,7 @@ namespace MusicGuide.Models
     [Serializable]
     public class Artist : Info
     {
-        List<Album> albums = new List<Album>();
+        public List<Album> albums = new List<Album>();
         public Artist(string name = "", string year = "", string genre = "", string link = "") : base(name, year, genre, link){}
 
         public void AddNewAlbum(Album album)

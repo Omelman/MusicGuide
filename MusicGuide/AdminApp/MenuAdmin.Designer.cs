@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.ManePanel = new System.Windows.Forms.Panel();
+            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.AddNewFlatButton = new System.Windows.Forms.Button();
             this.ShowCustomersButton = new System.Windows.Forms.Button();
@@ -36,7 +39,8 @@
             this.CloseButton = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.ManePanel.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -45,6 +49,10 @@
             // 
             this.ManePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(218)))), ((int)(((byte)(219)))));
             this.ManePanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ManePanel.Controls.Add(this.button4);
+            this.ManePanel.Controls.Add(this.button3);
+            this.ManePanel.Controls.Add(this.listBox2);
+            this.ManePanel.Controls.Add(this.button2);
             this.ManePanel.Controls.Add(this.button1);
             this.ManePanel.Controls.Add(this.listBox1);
             this.ManePanel.Controls.Add(this.AddNewFlatButton);
@@ -55,9 +63,39 @@
             this.ManePanel.Location = new System.Drawing.Point(0, 0);
             this.ManePanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ManePanel.Name = "ManePanel";
-            this.ManePanel.Size = new System.Drawing.Size(912, 630);
+            this.ManePanel.Size = new System.Drawing.Size(912, 636);
             this.ManePanel.TabIndex = 9;
             this.ManePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ManePanel_Paint);
+            // 
+            // listBox2
+            // 
+            this.listBox2.FormattingEnabled = true;
+            this.listBox2.ItemHeight = 20;
+            this.listBox2.Location = new System.Drawing.Point(372, 168);
+            this.listBox2.Name = "listBox2";
+            this.listBox2.Size = new System.Drawing.Size(198, 404);
+            this.listBox2.TabIndex = 16;
+            this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(71, 589);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(145, 34);
+            this.button2.TabIndex = 15;
+            this.button2.Text = "Delete artist";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(71, 114);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(145, 34);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Add new artist";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // listBox1
             // 
@@ -160,21 +198,31 @@
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // button1
+            // button3
             // 
-            this.button1.Location = new System.Drawing.Point(71, 114);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(145, 34);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Add new artist";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.button3.Location = new System.Drawing.Point(393, 114);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(148, 34);
+            this.button3.TabIndex = 17;
+            this.button3.Text = "Add new album";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(393, 589);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(148, 34);
+            this.button4.TabIndex = 18;
+            this.button4.Text = "Delete album";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // MenuAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(912, 630);
+            this.ClientSize = new System.Drawing.Size(912, 636);
             this.Controls.Add(this.ManePanel);
             this.Name = "MenuAdmin";
             this.Text = "MenuAdmin";
@@ -196,5 +244,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
     }
 }

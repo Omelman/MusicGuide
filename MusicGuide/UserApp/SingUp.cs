@@ -117,6 +117,10 @@ namespace MusicGuide.UserApp
                         store.AddNewUser(user);
                         MessageBox.Show("We are glad to hear you joined us!");
                         store.Save();
+                        Form Menu = new MenuUser(ref store);
+                        Menu.Left = this.Left;
+                        Menu.Top = this.Top;
+                        Menu.Show();
                         this.Hide();
                     }
                     else

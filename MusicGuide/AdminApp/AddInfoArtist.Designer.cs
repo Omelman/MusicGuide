@@ -1,6 +1,6 @@
 ﻿namespace MusicGuide.AdminApp
 {
-    partial class AddInfo
+    partial class AddInfoArtist
     {
         /// <summary>
         /// Required designer variable.
