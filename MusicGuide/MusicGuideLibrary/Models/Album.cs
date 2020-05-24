@@ -11,7 +11,7 @@ namespace MusicGuide.Models
     public class Album : Info
     {
         public List<Song> songs = new List<Song>();
-        public Album(string name = "", int year = 0, string genre = "", string link = "") : base(name, year, genre, link) {}
+        public Album(string name = "", string year = "", string genre = "", string link = "") : base(name, year, genre, link) {}
        
         public void AddNewSong(Song song)
         {

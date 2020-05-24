@@ -54,10 +54,10 @@ namespace MusicGuide.AdminApp
             if (password == AdminPassword || nickname == AdminLogin)
             {
   
-               // Form Menu = new Menu();
-               // Menu.Left = this.Left;
-               // Menu.Top = this.Top;
-               // Menu.Show();
+                 Form Menu = new MenuAdmin(ref store);
+                 Menu.Left = this.Left;
+                 Menu.Top = this.Top;
+                 Menu.Show();
                 this.Hide();
 
             }
@@ -65,6 +65,11 @@ namespace MusicGuide.AdminApp
             {
                 MessageBox.Show(" Please, check your name and  pass");
             }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

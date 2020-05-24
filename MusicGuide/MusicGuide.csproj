@@ -46,11 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminApp\AddInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminApp\AddInfo.Designer.cs">
+      <DependentUpon>AddInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminApp\LoginFormAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AdminApp\LoginFormAdmin.Designer.cs">
       <DependentUpon>LoginFormAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminApp\MenuAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminApp\MenuAdmin.Designer.cs">
+      <DependentUpon>MenuAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="MusicGuideLibrary\Models\Storage.cs" />
     <Compile Include="MusicGuideLibrary\Models\User.cs" />
@@ -67,14 +79,26 @@
     <Compile Include="MusicGuideLibrary\Models\Song.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserApp\MenuUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserApp\MenuUser.Designer.cs">
+      <DependentUpon>MenuUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserApp\SingUp.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UserApp\SingUp.Designer.cs">
       <DependentUpon>SingUp.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AdminApp\AddInfo.resx">
+      <DependentUpon>AddInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AdminApp\LoginFormAdmin.resx">
       <DependentUpon>LoginFormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminApp\MenuAdmin.resx">
+      <DependentUpon>MenuAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserApp\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
@@ -89,6 +113,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserApp\MenuUser.resx">
+      <DependentUpon>MenuUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserApp\SingUp.resx">
       <DependentUpon>SingUp.cs</DependentUpon>
     </EmbeddedResource>

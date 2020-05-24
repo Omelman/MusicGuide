@@ -12,13 +12,13 @@ namespace MusicGuide.Models
     {
         public string Name { private set; get; }
         //
-        public int Year { private set; get; }
+        public string Year { private set; get; }
         //
         public string Genre { private set; get; }
         //
         public string Link { private set; get; }
 
-        public Info(string name = "", int year = 0, string genre = "", string link = "")
+        public Info(string name = "", string year = "", string genre = "", string link = "")
         {
             this.Name = name;
             this.Year = year;

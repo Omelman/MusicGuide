@@ -76,13 +76,13 @@
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label3.Click += new System.EventHandler(this.Login_As_User);
             // 
-            // AutPassword
+            // Password
             // 
             this.Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Password.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.Password.Location = new System.Drawing.Point(138, 297);
             this.Password.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Password.Name = "AutPassword";
+            this.Password.Name = "Password";
             this.Password.Size = new System.Drawing.Size(266, 35);
             this.Password.TabIndex = 8;
             this.Password.Text = "admin";
@@ -96,8 +96,9 @@
             this.textBox1.Size = new System.Drawing.Size(266, 35);
             this.textBox1.TabIndex = 7;
             this.textBox1.Text = "admin";
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // button1
+            // Login
             // 
             this.Login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(156)))), ((int)(((byte)(153)))));
             this.Login.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -107,7 +108,7 @@
             this.Login.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Login.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Login.Location = new System.Drawing.Point(184, 432);
-            this.Login.Name = "button1";
+            this.Login.Name = "Login";
             this.Login.Size = new System.Drawing.Size(125, 59);
             this.Login.TabIndex = 5;
             this.Login.Text = "Sing in";
