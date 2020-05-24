@@ -52,7 +52,6 @@
     <Compile Include="AdminApp\LoginFormAdmin.Designer.cs">
       <DependentUpon>LoginFormAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="MusicGuideLibrary\Models\Admin.cs" />
     <Compile Include="MusicGuideLibrary\Models\Storage.cs" />
     <Compile Include="MusicGuideLibrary\Models\User.cs" />
     <Compile Include="UserApp\LoginForm.cs">

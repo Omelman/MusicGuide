@@ -108,7 +108,7 @@ namespace MusicGuide
                     }
                     else
                     {
-                        MessageBox.Show("Sorry, such Customer doesn`t exist...Try again or sign up !");
+                        MessageBox.Show("Sorry, such User doesn`t exist...Try again or sign up !");
                     }
 
                 }

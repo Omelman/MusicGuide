@@ -30,9 +30,9 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.AutPassword = new System.Windows.Forms.TextBox();
+            this.Password = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Login = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -47,9 +47,9 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(199)))), ((int)(((byte)(195)))));
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.AutPassword);
+            this.panel1.Controls.Add(this.Password);
             this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.Login);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.panel2);
@@ -59,6 +59,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(521, 565);
             this.panel1.TabIndex = 1;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label3
             // 
@@ -77,15 +78,15 @@
             // 
             // AutPassword
             // 
-            this.AutPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.AutPassword.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.AutPassword.Location = new System.Drawing.Point(138, 297);
-            this.AutPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.AutPassword.Name = "AutPassword";
-            this.AutPassword.Size = new System.Drawing.Size(266, 35);
-            this.AutPassword.TabIndex = 8;
-            this.AutPassword.Text = "admin";
-            this.AutPassword.UseSystemPasswordChar = true;
+            this.Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Password.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.Password.Location = new System.Drawing.Point(138, 297);
+            this.Password.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Password.Name = "AutPassword";
+            this.Password.Size = new System.Drawing.Size(266, 35);
+            this.Password.TabIndex = 8;
+            this.Password.Text = "admin";
+            this.Password.UseSystemPasswordChar = true;
             // 
             // textBox1
             // 
@@ -98,19 +99,20 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(156)))), ((int)(((byte)(153)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(237)))), ((int)(((byte)(190)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(184, 432);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(125, 59);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Sing in";
-            this.button1.UseVisualStyleBackColor = false;
+            this.Login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(156)))), ((int)(((byte)(153)))));
+            this.Login.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Login.FlatAppearance.BorderSize = 0;
+            this.Login.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(237)))), ((int)(((byte)(190)))));
+            this.Login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Login.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Login.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Login.Location = new System.Drawing.Point(184, 432);
+            this.Login.Name = "button1";
+            this.Login.Size = new System.Drawing.Size(125, 59);
+            this.Login.TabIndex = 5;
+            this.Login.Text = "Sing in";
+            this.Login.UseVisualStyleBackColor = false;
+            this.Login.Click += new System.EventHandler(this.Sing_in_as_admin);
             // 
             // pictureBox2
             // 
@@ -177,9 +179,9 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox AutPassword;
+        private System.Windows.Forms.TextBox Password;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Login;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;

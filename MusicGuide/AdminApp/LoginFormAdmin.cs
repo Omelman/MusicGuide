@@ -14,6 +14,8 @@ namespace MusicGuide.AdminApp
     public partial class LoginFormAdmin : Form
     {
         internal Storage store;
+        const string AdminPassword = "admin";
+        const string AdminLogin = "admin";
         public LoginFormAdmin(ref Storage store)
         {
             this.store = store;
@@ -37,6 +39,32 @@ namespace MusicGuide.AdminApp
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Sing_in_as_admin(object sender, EventArgs e)
+        {
+            string nickname = Login.Text;
+            string password = Password.Text;
+
+            if (password == AdminPassword || nickname == AdminLogin)
+            {
+  
+               // Form Menu = new Menu();
+               // Menu.Left = this.Left;
+               // Menu.Top = this.Top;
+               // Menu.Show();
+                this.Hide();
+
+            }
+            else
+            {
+                MessageBox.Show(" Please, check your name and  pass");
+            }
         }
     }
 }
