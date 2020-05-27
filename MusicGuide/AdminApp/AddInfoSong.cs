@@ -12,18 +12,35 @@ using System.Windows.Forms;
 
 namespace MusicGuide.AdminApp
 {
-    public partial class AddInfoArtist : Form
+    public partial class AddInfoSong : Form
     {
         internal Storage store;
+        Album album;
         ListBox listbox;
-        public AddInfoArtist(ref Storage store, ref ListBox listbox)
+        public AddInfoSong(ref Storage store, ref ListBox listbox, ref Album album)
         {
+            this.album = album;
             this.listbox = listbox;
             this.store = store;
             InitializeComponent();
         }
 
-        private void AddInfo_Load(object sender, EventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
         {
 
         }
@@ -33,14 +50,14 @@ namespace MusicGuide.AdminApp
             string Name = textBox1.Text;
             string Year = textBox2.Text;
             string Genre = textBox3.Text;
-            Artist artist = new Artist(Name,Year,Genre);
-            store.AddNewArtist(artist);
+            Song song = new Song(Name, Year, Genre);
+            album.AddNewSong(song);
             store.Save();
             listbox.Items.Add(Name);
             this.Hide();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void AddInfoSong_Load(object sender, EventArgs e)
         {
 
         }

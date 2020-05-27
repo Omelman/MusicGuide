@@ -55,8 +55,7 @@ namespace MusicGuide.AdminApp
             string Name = textBox1.Text;
             string Year = textBox2.Text;
             string Genre = textBox3.Text;
-            string Link = textBox4.Text;
-            Album album = new Album(Name, Year, Genre, Link);
+            Album album = new Album(Name, Year, Genre);
             artist.AddNewAlbum(album);
             store.Save();
             listbox.Items.Add(Name);

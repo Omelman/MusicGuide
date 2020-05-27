@@ -1,4 +1,5 @@
 ﻿using MusicGuide.Models;
+using MusicGuide.MusicGuideLibrary;
 using MusicGuide.MusicGuideLibrary.Models;
 using System;
 using System.Collections.Generic;
@@ -44,6 +45,7 @@ namespace MusicGuide.AdminApp
 
             //reload
             listBox2.Items.Clear();
+            listBox3.Items.Clear();
             //albums mode
             if (listBox1.SelectedItem != null)
             {
@@ -86,8 +88,7 @@ namespace MusicGuide.AdminApp
                 {
                     MessageBox.Show("Name: " + element.Name +
                         "\n" + "Genre: " + element.Genre +
-                        "\n" + "Year: " + element.Year +
-                        "\n" + "Link: " + element.Link);
+                        "\n" + "Year: " + element.Year);
                     break;
                 }
             }
@@ -116,7 +117,36 @@ namespace MusicGuide.AdminApp
 
         private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //reload
+            listBox3.Items.Clear();
+            //albums mode
+            if (listBox2.SelectedItem != null&& listBox1.SelectedItem != null)
+            {
+                string selected1 = listBox1.SelectedItem.ToString();
+                string selected2 = listBox2.SelectedItem.ToString();
 
+                Album album = new Album();
+                foreach (Artist element1 in store.artists)
+                {
+                    if (element1.Name == selected1)
+                    {
+                        foreach (Album element2 in element1.albums)
+                        {
+                            if(element2.Name == selected2)
+                            {
+                                album = element2;
+                                break;
+                            }
+                        }
+                            break;
+                    }
+                }
+                //fill box 3
+                foreach (Song element in album.songs)
+                {
+                    listBox3.Items.Add(element.Name);
+                }
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -167,9 +197,165 @@ namespace MusicGuide.AdminApp
                        break;
                     }
                 }
-                listBox1.Items.Remove(listBox2.SelectedItem);
-                listBox1.ClearSelected();
+                listBox2.Items.Remove(listBox2.SelectedItem);
+                listBox2.ClearSelected();
             }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if (listBox2.SelectedItem == null|| listBox1.SelectedItem == null) MessageBox.Show("Please, select album");
+            else
+            {
+                string selected1 = listBox1.SelectedItem.ToString();
+                string selected2 = listBox2.SelectedItem.ToString();
+                Album album = new Album();
+                foreach (Artist element in store.artists)
+                {
+                    if (element.Name == selected1)
+                    {
+                        foreach (Album element2 in element.albums)
+                        {
+                            if (element2.Name == selected2)
+                            {
+                                album = element2;
+                                break;
+                            }
+                        }
+
+                        break;
+                    }
+                }
+                Form AddInfo = new AddInfoSong(ref store, ref listBox3, ref album);
+
+                AddInfo.Left = this.Left;
+                AddInfo.Top = this.Top;
+                AddInfo.Show();
+            }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if (listBox2.SelectedItem == null || listBox1.SelectedItem == null || listBox3.SelectedItem == null) MessageBox.Show("Please, select artist,album and song");
+            else
+            {
+                string selected1 = listBox1.SelectedItem.ToString();
+                string selected2 = listBox2.SelectedItem.ToString();
+                string selected3 = listBox3.SelectedItem.ToString();
+
+                foreach (Artist element in store.artists)
+                {
+                    if (element.Name == selected1)
+                    {
+                        foreach (Album element2 in element.albums)
+                        {
+                            if (element2.Name == selected2)
+                            {
+                                foreach (Song element3 in element2.songs)
+                                {
+                                    if (element3.Name == selected3)
+                                    {
+                                        element2.DeleteSong(element3.Name);
+                                        store.Save();
+                                        break;
+                                    }
+                                }
+                                break;
+                            }
+                        }
+
+                        break;
+                    }
+                }
+                listBox3.Items.Remove(listBox3.SelectedItem);
+                listBox3.ClearSelected();
+            }
+        }
+
+        private void User_Button(object sender, EventArgs e)
+        {
+            Form user = new UsersInfo(ref store);
+
+            user.Left = this.Left;
+            user.Top = this.Top;
+            user.Show();
+        }
+
+        private void Search_Button(object sender, EventArgs e)
+        {
+            Form search = new Search(ref store);
+
+            search.Left = this.Left;
+            search.Top = this.Top;
+            search.Show();
+        }
+
+        private void listBox2_DoubleClick(object sender, EventArgs e)
+        {
+            if (listBox2.SelectedItem == null) MessageBox.Show("Please, select album");
+            else
+            {
+                string selected1 = listBox1.SelectedItem.ToString();
+                string selected2 = listBox2.SelectedItem.ToString();
+
+                foreach (Artist element1 in store.artists)
+                {
+                   if(selected1 == element1.Name)
+                        foreach (Album element2 in element1.albums)
+                        {
+                            if (element2.Name == selected2)
+                            {
+                                MessageBox.Show("Name: " + element2.Name +
+                                                        "\n" + "Genre: " + element2.Genre +
+                                                        "\n" + "Year: " + element2.Year);
+                                break;
+                            }
+                        }
+                   
+              
+                }
+            }
+        }
+
+        private void listBox3_DoubleClick(object sender, EventArgs e)
+        {
+            if (listBox3.SelectedItem == null) MessageBox.Show("Please, select song");
+            else
+            {
+                string selected1 = listBox1.SelectedItem.ToString();
+                string selected2 = listBox2.SelectedItem.ToString();
+                string selected3 = listBox3.SelectedItem.ToString();
+
+                foreach (Artist element1 in store.artists)
+                {
+                    if (selected1 == element1.Name)
+                        foreach (Album element2 in element1.albums)
+                        {
+                            if (element2.Name == selected2)
+                                foreach (Song element3 in element2.songs)
+                                {
+                                    if (element3.Name == selected3) { 
+                                    MessageBox.Show("Name: " + element3.Name +
+                                                            "\n" + "Genre: " + element3.Genre +
+                                                            "\n" + "Year: " + element3.Year );
+                                    break;
+                                }
+                                }
+                        }
+
+
+                }
+            }
+        }
+
+        private void listBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MenuAdmin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

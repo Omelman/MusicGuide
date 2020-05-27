@@ -15,15 +15,13 @@ namespace MusicGuide.Models
         public string Year { private set; get; }
         //
         public string Genre { private set; get; }
-        //
-        public string Link { private set; get; }
+      
 
-        public Info(string name = "", string year = "", string genre = "", string link = "")
+        public Info(string name = "", string year = "", string genre = "")
         {
             this.Name = name;
             this.Year = year;
             this.Genre = genre;
-            this.Link = link;
         }
 
         public virtual void ShowInfo()
@@ -31,7 +29,6 @@ namespace MusicGuide.Models
             Console.WriteLine("Name : " + Name);
             Console.WriteLine("Year : " + Year);
             Console.WriteLine("Genre : " + Genre);
-            Console.WriteLine("Link : " + Link);
         }
     }
 }
