@@ -36,8 +36,6 @@
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.label3 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.AddNewFlatButton = new System.Windows.Forms.Button();
-            this.ShowCustomersButton = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -63,15 +61,13 @@
             this.ManePanel.Controls.Add(this.listBox2);
             this.ManePanel.Controls.Add(this.label3);
             this.ManePanel.Controls.Add(this.listBox1);
-            this.ManePanel.Controls.Add(this.AddNewFlatButton);
-            this.ManePanel.Controls.Add(this.ShowCustomersButton);
             this.ManePanel.Controls.Add(this.panel2);
             this.ManePanel.Cursor = System.Windows.Forms.Cursors.Default;
             this.ManePanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ManePanel.Location = new System.Drawing.Point(0, 0);
             this.ManePanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ManePanel.Name = "ManePanel";
-            this.ManePanel.Size = new System.Drawing.Size(1011, 642);
+            this.ManePanel.Size = new System.Drawing.Size(1011, 658);
             this.ManePanel.TabIndex = 8;
             this.ManePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ManePanel_Paint);
             // 
@@ -150,42 +146,6 @@
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             this.listBox1.DoubleClick += new System.EventHandler(this.listBox1_DoubleClick);
             // 
-            // AddNewFlatButton
-            // 
-            this.AddNewFlatButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(230)))), ((int)(((byte)(234)))));
-            this.AddNewFlatButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AddNewFlatButton.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.AddNewFlatButton.FlatAppearance.BorderSize = 2;
-            this.AddNewFlatButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.AddNewFlatButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.AddNewFlatButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AddNewFlatButton.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.AddNewFlatButton.Location = new System.Drawing.Point(82, 708);
-            this.AddNewFlatButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.AddNewFlatButton.Name = "AddNewFlatButton";
-            this.AddNewFlatButton.Size = new System.Drawing.Size(302, 51);
-            this.AddNewFlatButton.TabIndex = 11;
-            this.AddNewFlatButton.Text = "Add new flat";
-            this.AddNewFlatButton.UseVisualStyleBackColor = false;
-            // 
-            // ShowCustomersButton
-            // 
-            this.ShowCustomersButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(230)))), ((int)(((byte)(234)))));
-            this.ShowCustomersButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ShowCustomersButton.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.ShowCustomersButton.FlatAppearance.BorderSize = 2;
-            this.ShowCustomersButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(237)))), ((int)(((byte)(187)))));
-            this.ShowCustomersButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.ShowCustomersButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ShowCustomersButton.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ShowCustomersButton.Location = new System.Drawing.Point(868, 708);
-            this.ShowCustomersButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ShowCustomersButton.Name = "ShowCustomersButton";
-            this.ShowCustomersButton.Size = new System.Drawing.Size(302, 51);
-            this.ShowCustomersButton.TabIndex = 5;
-            this.ShowCustomersButton.Text = "Show customers";
-            this.ShowCustomersButton.UseVisualStyleBackColor = false;
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Gray;
@@ -228,7 +188,6 @@
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(156)))), ((int)(((byte)(153)))));
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
@@ -252,21 +211,21 @@
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(153, 34);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // loadToolStripMenuItem
             // 
             this.loadToolStripMenuItem.Name = "loadToolStripMenuItem";
-            this.loadToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.loadToolStripMenuItem.Size = new System.Drawing.Size(153, 34);
             this.loadToolStripMenuItem.Text = "Load";
             this.loadToolStripMenuItem.Click += new System.EventHandler(this.loadToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(153, 34);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -281,7 +240,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1011, 642);
+            this.ClientSize = new System.Drawing.Size(1011, 658);
             this.Controls.Add(this.ManePanel);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MenuUser";
@@ -300,8 +259,6 @@
         #endregion
 
         private System.Windows.Forms.Panel ManePanel;
-        private System.Windows.Forms.Button AddNewFlatButton;
-        private System.Windows.Forms.Button ShowCustomersButton;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
