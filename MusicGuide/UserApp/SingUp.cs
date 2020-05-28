@@ -115,7 +115,7 @@ namespace MusicGuide.UserApp
                     {
                         User user = new User(name, pass);
                         store.AddNewUser(user);
-                        MessageBox.Show("We are glad to hear you joined us!");
+                        MessageBox.Show("Thank you for joined us!");
                         store.Save();
                         Form Menu = new MenuUser(ref store);
                         Menu.Left = this.Left;
@@ -141,6 +141,11 @@ namespace MusicGuide.UserApp
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void SingUp_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

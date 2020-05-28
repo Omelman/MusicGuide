@@ -355,7 +355,49 @@ namespace MusicGuide.AdminApp
 
         private void MenuAdmin_Load(object sender, EventArgs e)
         {
+          
+        }
 
+        private void MenuAdmin_HelpButtonClicked(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void MenuAdmin_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void loadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            store.Save();
+        }
+
+        private void loadToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            store.Load();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(
+           "To get help click help",
+           "Help",
+           MessageBoxButtons.OK,
+           MessageBoxIcon.Question,
+           MessageBoxDefaultButton.Button1,
+           0,
+           "https://github.com/Omelman/MusicGuide");
         }
     }
 }

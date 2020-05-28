@@ -78,13 +78,13 @@
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label3.Click += new System.EventHandler(this.Login_as_Admin);
             // 
-            // AutPassword
+            // SingInPassword
             // 
             this.SingInPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.SingInPassword.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.SingInPassword.Location = new System.Drawing.Point(138, 297);
             this.SingInPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.SingInPassword.Name = "AutPassword";
+            this.SingInPassword.Name = "SingInPassword";
             this.SingInPassword.Size = new System.Drawing.Size(266, 35);
             this.SingInPassword.TabIndex = 8;
             this.SingInPassword.Text = "Password";
@@ -183,6 +183,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "LoginForm";
             this.Text = "User";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.LoginForm_FormClosing);
             this.Load += new System.EventHandler(this.LoginForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

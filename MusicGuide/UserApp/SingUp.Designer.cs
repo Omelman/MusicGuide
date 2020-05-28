@@ -150,6 +150,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "SingUp";
             this.Text = "Sing Up";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SingUp_FormClosing);
             this.Load += new System.EventHandler(this.SingUp_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

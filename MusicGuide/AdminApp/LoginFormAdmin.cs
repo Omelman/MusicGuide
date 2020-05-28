@@ -71,5 +71,10 @@ namespace MusicGuide.AdminApp
         {
 
         }
+
+        private void LoginFormAdmin_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

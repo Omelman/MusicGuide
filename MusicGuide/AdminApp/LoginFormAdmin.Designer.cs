@@ -166,6 +166,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "LoginFormAdmin";
             this.Text = "Admin";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.LoginFormAdmin_FormClosing);
             this.Load += new System.EventHandler(this.LoginFormAdmin_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

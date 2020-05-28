@@ -103,7 +103,7 @@ namespace MusicGuide
                     nickname = SingInLogin.Text;
                     if (store.users.FirstOrDefault(u => u.Login == name && u.Password == password) != null)
                     {
-                        MessageBox.Show($"Hello, Dear {name}! We wish you to have a nice day)");
+                        MessageBox.Show($"Hello, {name}!");
                         Form Menu = new MenuUser(ref store);
                         Menu.Left = this.Left;
                         Menu.Top = this.Top;
@@ -152,6 +152,11 @@ namespace MusicGuide
         private void AutPassword_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void LoginForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
