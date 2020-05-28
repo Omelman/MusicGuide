@@ -388,16 +388,18 @@ namespace MusicGuide.AdminApp
             Application.Exit();
         }
 
+ 
+
         private void helpToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show(
-           "To get help click help",
-           "Help",
-           MessageBoxButtons.OK,
-           MessageBoxIcon.Question,
-           MessageBoxDefaultButton.Button1,
-           0,
-           "https://github.com/Omelman/MusicGuide");
+          "To get help click help",
+          "Help",
+          MessageBoxButtons.OK,
+          MessageBoxIcon.Question,
+          MessageBoxDefaultButton.Button1,
+          0,
+          "https://github.com/Omelman/MusicGuide");
         }
     }
 }
