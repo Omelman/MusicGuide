@@ -147,5 +147,11 @@ namespace MusicGuide.UserApp
         {
             Application.Exit();
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(" Login must consist of any letters (more than 4 less than 10) " +
+                "\n Password must consist ONLY of numbers (more than 4 less than 10)");
+        }
     }
 }
