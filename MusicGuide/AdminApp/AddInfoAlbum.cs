@@ -23,6 +23,8 @@ namespace MusicGuide.AdminApp
             this.listbox = listbox;
             this.store = store;
             InitializeComponent();
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
         }
 
         private void AddInfoAlbum_Load(object sender, EventArgs e)

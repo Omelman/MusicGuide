@@ -57,7 +57,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(505, 565);
+            this.panel1.Size = new System.Drawing.Size(505, 530);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -69,7 +69,7 @@
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.ForeColor = System.Drawing.Color.CadetBlue;
-            this.label3.Location = new System.Drawing.Point(140, 373);
+            this.label3.Location = new System.Drawing.Point(169, 372);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(186, 29);
             this.label3.TabIndex = 9;
@@ -83,10 +83,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Password.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.Password.Location = new System.Drawing.Point(138, 297);
+            this.Password.Location = new System.Drawing.Point(155, 296);
             this.Password.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Password.Name = "Password";
-            this.Password.Size = new System.Drawing.Size(250, 35);
+            this.Password.Size = new System.Drawing.Size(268, 35);
             this.Password.TabIndex = 8;
             this.Password.Text = "admin";
             this.Password.UseSystemPasswordChar = true;
@@ -96,9 +96,9 @@
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(138, 187);
+            this.textBox1.Location = new System.Drawing.Point(155, 194);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(250, 35);
+            this.textBox1.Size = new System.Drawing.Size(268, 35);
             this.textBox1.TabIndex = 7;
             this.textBox1.Text = "admin";
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
@@ -113,7 +113,7 @@
             this.Login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Login.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Login.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Login.Location = new System.Drawing.Point(176, 432);
+            this.Login.Location = new System.Drawing.Point(195, 431);
             this.Login.Name = "Login";
             this.Login.Size = new System.Drawing.Size(125, 59);
             this.Login.TabIndex = 5;
@@ -124,7 +124,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::MusicGuide.Properties.Resources._lock;
-            this.pictureBox2.Location = new System.Drawing.Point(31, 278);
+            this.pictureBox2.Location = new System.Drawing.Point(44, 284);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(70, 70);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -134,7 +134,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::MusicGuide.Properties.Resources.user;
-            this.pictureBox1.Location = new System.Drawing.Point(31, 168);
+            this.pictureBox1.Location = new System.Drawing.Point(44, 177);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(70, 70);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -168,7 +168,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(505, 565);
+            this.ClientSize = new System.Drawing.Size(505, 530);
             this.Controls.Add(this.panel1);
             this.Name = "LoginFormAdmin";
             this.Text = "Admin";

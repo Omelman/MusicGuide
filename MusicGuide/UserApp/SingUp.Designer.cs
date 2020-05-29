@@ -58,7 +58,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(518, 566);
+            this.panel1.Size = new System.Drawing.Size(518, 488);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -99,7 +99,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(194, 440);
+            this.button1.Location = new System.Drawing.Point(194, 401);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(125, 59);
             this.button1.TabIndex = 5;
@@ -166,7 +166,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(518, 566);
+            this.ClientSize = new System.Drawing.Size(518, 488);
             this.Controls.Add(this.panel1);
             this.Name = "SingUp";
             this.Text = "Sing Up";

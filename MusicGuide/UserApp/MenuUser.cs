@@ -203,11 +203,13 @@ namespace MusicGuide.UserApp
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
             store.Save();
+            MessageBox.Show("Done");
         }
 
         private void loadToolStripMenuItem_Click(object sender, EventArgs e)
         {
             store.Load();
+            MessageBox.Show("Done");
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)

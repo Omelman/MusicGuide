@@ -71,7 +71,7 @@
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.ForeColor = System.Drawing.Color.CadetBlue;
-            this.label3.Location = new System.Drawing.Point(148, 373);
+            this.label3.Location = new System.Drawing.Point(170, 375);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(206, 29);
             this.label3.TabIndex = 9;
@@ -85,10 +85,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SingInPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.SingInPassword.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.SingInPassword.Location = new System.Drawing.Point(138, 297);
+            this.SingInPassword.Location = new System.Drawing.Point(165, 295);
             this.SingInPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.SingInPassword.Name = "SingInPassword";
-            this.SingInPassword.Size = new System.Drawing.Size(266, 35);
+            this.SingInPassword.Size = new System.Drawing.Size(282, 35);
             this.SingInPassword.TabIndex = 8;
             this.SingInPassword.Text = "Password";
             this.SingInPassword.UseSystemPasswordChar = true;
@@ -99,9 +99,9 @@
             this.SingInLogin.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SingInLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.SingInLogin.Location = new System.Drawing.Point(138, 187);
+            this.SingInLogin.Location = new System.Drawing.Point(165, 187);
             this.SingInLogin.Name = "SingInLogin";
-            this.SingInLogin.Size = new System.Drawing.Size(266, 35);
+            this.SingInLogin.Size = new System.Drawing.Size(282, 35);
             this.SingInLogin.TabIndex = 7;
             this.SingInLogin.Text = "Login";
             // 
@@ -113,7 +113,7 @@
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(177, 419);
+            this.label2.Location = new System.Drawing.Point(198, 418);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(133, 37);
             this.label2.TabIndex = 6;
@@ -131,7 +131,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(184, 482);
+            this.button1.Location = new System.Drawing.Point(206, 480);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(125, 59);
             this.button1.TabIndex = 5;
@@ -142,7 +142,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::MusicGuide.Properties.Resources._lock;
-            this.pictureBox2.Location = new System.Drawing.Point(31, 278);
+            this.pictureBox2.Location = new System.Drawing.Point(47, 275);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(70, 70);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -152,7 +152,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::MusicGuide.Properties.Resources.user;
-            this.pictureBox1.Location = new System.Drawing.Point(31, 168);
+            this.pictureBox1.Location = new System.Drawing.Point(47, 168);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(70, 70);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

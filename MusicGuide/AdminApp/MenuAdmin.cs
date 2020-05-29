@@ -105,7 +105,7 @@ namespace MusicGuide.AdminApp
                 {
                     if (element.Name == selected)
                     {
-                        store.artists.Remove(element);
+                        store.DeleteArtist(element.Name);
                         store.Save();
                         break;
                     }
@@ -376,11 +376,13 @@ namespace MusicGuide.AdminApp
         private void loadToolStripMenuItem_Click(object sender, EventArgs e)
         {
             store.Save();
+            MessageBox.Show("Done");
         }
 
         private void loadToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             store.Load();
+            MessageBox.Show("Done");
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -400,6 +402,11 @@ namespace MusicGuide.AdminApp
           MessageBoxDefaultButton.Button1,
           0,
           "https://github.com/Omelman/MusicGuide");
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }

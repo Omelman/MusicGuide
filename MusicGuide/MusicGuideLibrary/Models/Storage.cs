@@ -18,6 +18,17 @@ namespace MusicGuide.MusicGuideLibrary.Models
         {
             artists.Add(artist);
         }
+        public void DeleteArtist(String artist)
+        {
+            if (artists.Count == 0) Console.WriteLine("Empty");
+            else
+            {
+                foreach (Artist element in artists)
+                {
+                    if (element.Name == artist) { artists.Remove(element); break; }
+                }
+            }
+        }
         public void AddNewUser(User user)
         {
             users.Add(user);

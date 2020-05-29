@@ -38,41 +38,50 @@ namespace MusicGuide.MusicGuideLibrary
         private void button1_Click(object sender, EventArgs e)
         {
             listView1.Items.Clear();
-            string searched = textBox1.Text;
-            if (radioButton1.Checked)
+            if (textBox1.Text == "") MessageBox.Show("Please, enter your request");else
+            if ((radioButton2.Checked != true) && (radioButton1.Checked != true)) MessageBox.Show("Please, choose parametr");
+            else
             {
-                foreach (Artist artist in store.artists)
+                string searched = textBox1.Text;
+                bool check = false;
+                if (radioButton1.Checked)
                 {
-                    foreach (Album album in artist.albums)
-                    {
-                        foreach (Song song in album.songs)
-                        {
-                            if (searched == song.Name)
-                            {
-                                var item1 = new ListViewItem(new[] { song.Name, artist.Name, album.Name });
-                                listView1.Items.Add(item1);
-                            }
-                        }
-                    }
-                }
-            }
-
-            if (radioButton2.Checked)
-            {
-                foreach (Artist artist in store.artists)
-                {
-                    if (searched == artist.Name)
+                    foreach (Artist artist in store.artists)
                     {
                         foreach (Album album in artist.albums)
                         {
                             foreach (Song song in album.songs)
                             {
-                                var item1 = new ListViewItem(new[] { song.Name, artist.Name, album.Name });
-                                listView1.Items.Add(item1);
+                                if (searched == song.Name)
+                                {
+                                    var item1 = new ListViewItem(new[] { song.Name, artist.Name, album.Name });
+                                    listView1.Items.Add(item1);
+                                    check = true;
+                                }
                             }
                         }
                     }
                 }
+
+                if (radioButton2.Checked)
+                {
+                    foreach (Artist artist in store.artists)
+                    {
+                        if (searched == artist.Name)
+                        {
+                            foreach (Album album in artist.albums)
+                            {
+                                foreach (Song song in album.songs)
+                                {
+                                    var item1 = new ListViewItem(new[] { song.Name, artist.Name, album.Name });
+                                    listView1.Items.Add(item1);
+                                    check = true;
+                                }
+                            }
+                        }
+                    }
+                }
+                if (check == false) MessageBox.Show("Not found");
             }
         }
 
