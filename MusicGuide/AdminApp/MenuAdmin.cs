@@ -394,7 +394,7 @@ namespace MusicGuide.AdminApp
 
         private void helpToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("https://github.com/Omelman/MusicGuide");
+            System.Diagnostics.Process.Start("https://github.com/Omelman/MusicGuide/tree/master/MusicGuide/docs");
           
         }
 

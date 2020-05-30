@@ -77,7 +77,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33332F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 146F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 147F));
             this.tableLayoutPanel1.Controls.Add(this.listBox2, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.button1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.button5, 2, 0);
@@ -110,7 +110,7 @@
             this.listBox2.Location = new System.Drawing.Point(347, 109);
             this.listBox2.Margin = new System.Windows.Forms.Padding(10, 10, 20, 10);
             this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(308, 429);
+            this.listBox2.Size = new System.Drawing.Size(307, 429);
             this.listBox2.TabIndex = 16;
             this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
             this.listBox2.DoubleClick += new System.EventHandler(this.listBox2_DoubleClick);
@@ -131,7 +131,7 @@
             // 
             this.button5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(775, 29);
+            this.button5.Location = new System.Drawing.Point(773, 29);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(138, 40);
             this.button5.TabIndex = 20;
@@ -143,7 +143,7 @@
             // 
             this.button6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Location = new System.Drawing.Point(775, 594);
+            this.button6.Location = new System.Drawing.Point(773, 594);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(138, 40);
             this.button6.TabIndex = 21;
@@ -155,7 +155,7 @@
             // 
             this.button7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Location = new System.Drawing.Point(1024, 311);
+            this.button7.Location = new System.Drawing.Point(1023, 311);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(125, 40);
             this.button7.TabIndex = 22;
@@ -167,7 +167,7 @@
             // 
             this.button8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Location = new System.Drawing.Point(1024, 29);
+            this.button8.Location = new System.Drawing.Point(1023, 29);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(125, 40);
             this.button8.TabIndex = 23;
@@ -179,7 +179,7 @@
             // 
             this.button4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(432, 594);
+            this.button4.Location = new System.Drawing.Point(431, 594);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(148, 40);
             this.button4.TabIndex = 18;
@@ -195,10 +195,10 @@
             this.listBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.listBox3.FormattingEnabled = true;
             this.listBox3.ItemHeight = 25;
-            this.listBox3.Location = new System.Drawing.Point(685, 109);
+            this.listBox3.Location = new System.Drawing.Point(684, 109);
             this.listBox3.Margin = new System.Windows.Forms.Padding(10, 10, 20, 10);
             this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(308, 429);
+            this.listBox3.Size = new System.Drawing.Size(307, 429);
             this.listBox3.TabIndex = 19;
             this.listBox3.SelectedIndexChanged += new System.EventHandler(this.listBox3_SelectedIndexChanged);
             this.listBox3.DoubleClick += new System.EventHandler(this.listBox3_DoubleClick);
@@ -235,7 +235,7 @@
             // 
             this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(432, 29);
+            this.button3.Location = new System.Drawing.Point(431, 29);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(148, 40);
             this.button3.TabIndex = 17;
@@ -311,21 +311,21 @@
             // loadToolStripMenuItem
             // 
             this.loadToolStripMenuItem.Name = "loadToolStripMenuItem";
-            this.loadToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.loadToolStripMenuItem.Size = new System.Drawing.Size(153, 34);
             this.loadToolStripMenuItem.Text = "Save";
             this.loadToolStripMenuItem.Click += new System.EventHandler(this.loadToolStripMenuItem_Click);
             // 
             // loadToolStripMenuItem1
             // 
             this.loadToolStripMenuItem1.Name = "loadToolStripMenuItem1";
-            this.loadToolStripMenuItem1.Size = new System.Drawing.Size(270, 34);
+            this.loadToolStripMenuItem1.Size = new System.Drawing.Size(153, 34);
             this.loadToolStripMenuItem1.Text = "Load";
             this.loadToolStripMenuItem1.Click += new System.EventHandler(this.loadToolStripMenuItem1_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(153, 34);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
