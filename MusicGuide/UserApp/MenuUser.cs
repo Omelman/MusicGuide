@@ -219,14 +219,7 @@ namespace MusicGuide.UserApp
 
         private void helpToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(
-           "To get help click help",
-           "Help",
-           MessageBoxButtons.OK,
-           MessageBoxIcon.Question,
-           MessageBoxDefaultButton.Button1,
-           0,
-           "https://github.com/Omelman/MusicGuide");
+            System.Diagnostics.Process.Start("https://github.com/Omelman/MusicGuide");
         }
     }
 }
